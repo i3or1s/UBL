@@ -40,8 +40,8 @@ abstract class BinaryObjectType implements \Stringable
             AttributeBuilder::build(
                 $this,
                 [
-                    'listID', 'listAgencyID', 'listAgencyName', 'listName',
-                    'listVersionID', 'name', 'languageID', 'listURI', 'listSchemeURI',
+                    'format', 'mimeCode', 'encodingCode', 'characterSetCode',
+                    'uri', 'filename'
                 ]
             ),
             $this->value,
