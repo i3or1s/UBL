@@ -20,7 +20,7 @@ abstract class TextType implements \Stringable
 
     public function __construct(string $value, ?XsdLanguage $languageID, ?NormalizedString $languageLocaleID)
     {
-        $this->value = $value;
+        $this->value = htmlspecialchars($value);
         $this->languageID = $languageID;
         $this->languageLocaleID = $languageLocaleID;
     }
